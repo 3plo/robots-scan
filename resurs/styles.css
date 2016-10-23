@@ -1,0 +1,70 @@
+#siteNameContainer{
+    padding:12px;
+    width:860px;
+    position:relative;
+    background-color:#fcfcfc;
+    border:1px solid white;
+    color:#888;
+    margin-bottom:25px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+
+    -moz-box-shadow:2px 2px 0 #c2c2c2;
+    -webkit-box-shadow:2px 2px 0 #c2c2c2;
+    box-shadow:2px 2px 0 #c2c2c2;
+}
+
+
+#submit{
+    background-color:#58B9EB;
+    border:1px solid #40A2D4;
+    color:#FFFFFF;
+    cursor:pointer;
+    font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    padding:4px;
+    margin-top:5px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+
+#main{
+    position:relative;
+    margin:0 auto;
+    width:900px;
+}
+
+#inputSiteName{
+    width:400px;
+}
+
+#resultContainer{
+    padding:12px;
+    width:860px;
+    position:relative;
+    background-color:#fcfcfc;
+    border:1px solid white;
+    color:#888;
+    margin-bottom:25px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+
+    -moz-box-shadow:2px 2px 0 #c2c2c2;
+    -webkit-box-shadow:2px 2px 0 #c2c2c2;
+    box-shadow:2px 2px 0 #c2c2c2;
+}
+
+#result{
+    padding:12px;
+    width:840px;
+    position:relative;
+    margin-bottom:25px;
+}
+
+.formElement{
+    text-align: center;
+}
