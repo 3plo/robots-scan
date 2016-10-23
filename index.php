@@ -86,11 +86,18 @@ else
     finishFile();
 }
 
+/**
+ * method show form
+ * require ./app/index.html
+ */
 function showForm()
 {
     require_once "./app/index.html";
 }
 
+/**
+ * method take final part of the html document
+ */
 function finishFile()
 {
     echo <<<_ENDHTML
@@ -100,6 +107,11 @@ function finishFile()
 _ENDHTML;
 }
 
+/**
+ * @param string $url
+ * @return string
+ * method add protocol and file name to URL
+ */
 function createFullURL($url)
 {
     $fileName = 'robots.txt';
@@ -135,6 +147,10 @@ function createFullURL($url)
     return $result;
 }
 
+/**
+ * @param string $fullURL
+ * method create HTML code with results
+ */
 function showResult($fullURL)
 {
     $firstTask = FILE_EXIST_TASK;
@@ -320,6 +336,11 @@ function showResult($fullURL)
 RESULT;
 }
 
+/**
+ * @param string $fullURL
+ * @return array
+ * method create array with analysis
+ */
 function makeResult($fullURL)
 {
     $maxFileSize = 32*1024;
@@ -442,6 +463,11 @@ function makeResult($fullURL)
     return $result;
 }
 
+/**
+ * @param string $fullURL
+ * @return bool
+ * method does check for the existence file in the site
+ */
 function isRobotsExist($fullURL)
 {
     $result = false;
@@ -452,6 +478,12 @@ function isRobotsExist($fullURL)
     return $result;
 }
 
+/**
+ * @param string $fileContent
+ * @param string $directive
+ * @return bool
+ * method makes checking for directives
+ */
 function isHostDirectiveExist($fileContent, $directive)
 {
     $result = false;
@@ -462,6 +494,11 @@ function isHostDirectiveExist($fileContent, $directive)
     return $result;
 }
 
+/**
+ * @param string $fileContent
+ * @return int
+ * method makes checking the number of directives
+ */
 function checkCountHostDirective($fileContent)
 {
     $directive = 'Host:';
@@ -469,6 +506,11 @@ function checkCountHostDirective($fileContent)
     return $result;
 }
 
+/**
+ * @param string $fullURL
+ * @return int
+ * method check size of file and return byte size
+ */
 function checkFileSize($fullURL)
 {
     $fileName = 'file.txt';
@@ -478,6 +520,11 @@ function checkFileSize($fullURL)
     return $result;
 }
 
+/**
+ * @param string $fullURL
+ * @return string
+ * method makes checking code for HTTP response
+ */
 function chechHTTPResponse($fullURL)
 {
     @$header = get_headers($fullURL);;
